@@ -10,6 +10,18 @@ body {
   padding: 0em 0em;
 }
 
+.chatContainer {
+  position: fixed;
+  right: 20px;
+  bottom: 0px;
+  width: 300px;
+  height: 40px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: grey;
+  transition: height .5s;
+}
+
 
 .pageContainer {
   display: flex;
@@ -23,7 +35,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 1px solid blue;
+  width: 0px;
+  overflow: hidden;
+  transition: width .5s;
 }
 
 .menuBarContainer ul {
@@ -34,7 +48,7 @@ body {
   padding: 0em 0em;
 }
 
-.menuBarContainer li {
+.menuListItemTopCat {
   background-color: #4CAF50;
   list-style: none;
   color: white;
@@ -47,4 +61,15 @@ body {
 
 .menuBarContainer li:hover {
   background-color: #2C8F30;
+}
+
+.subCategory {
+  background-color: #747474;
+  list-style: none;
+  color: white;
+  font-family: Roboto;
+  padding: .5em 1em;
+  width: 150px;
+  margin-bottom: 1px;
+  font-size: .9em;
 }

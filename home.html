@@ -4,28 +4,56 @@
     <meta charset="utf-8">
     <title>NetRent - Rental Software</title>
     <link href="./css/mainStyle.css" type="text/css" rel="stylesheet">
+    <link href="./css/fontawesome-all.css">
   </head>
   <body>
 
+
+    <div class="chatContainer" id="chatBar">
+        <i class="fas comment"></i>
+        <span class="chatTitle">
+        Live Chat (2)
+      </span>
+      <span onClick="openChat()">Open</span>
+      <span onClick="closeChat()">Close</span>
+
+    </div>
+
     <div class="pageContainer">
 
-      <div class="menuBarContainer">
+      <div class="menuBarContainer" id="sideNav">
         <nav>
           <ul>
-            <li>Accounting</li>
-            <li>Sales</li>
-            <li>Picking</li>
-            <li>Dispatch</li>
-            <li>Product Return</li>
+            <li class="menuListItemTopCat">Accounting</li>
+                <li class="subCategory">Receivables</li>
+                <li class="subCategory">Purchasing</li>
+                <li class="subCategory">Journal Entry</li>
+
+            <li class="menuListItemTopCat">Sales</li>
+                <li class="subCategory">New Order</li>
+                <li class="subCategory">Edit Order</li>
+                <li class="subCategory">Re-Print Order</li>
+            <li class="menuListItemTopCat">Picking</li>
+            <li class="menuListItemTopCat">Dispatch</li>
+            <li class="menuListItemTopCat">Product Return</li>
+            <li class="menuListItemTopCat">Configuration</li>
+              <li class="subCategory">Products</li>
+              <li class="subCategory">Customers</li>
+              <li class="subCategory">Vendors</li>
+              <li class="subCategory">Commissions</li>
+
           </ul>
         </nav>
       </div>
 
-
       <div class="rightSideContainer">
+        <span style="margin-left: 100px;" onClick="openNav();"><h2>Open Nav</h2></span>
+        <span style="margin-left: 100px;" onClick="closeNav();"><h2>Close Nav</h2></span>
+
       </div>
 
     </div>
 
+    <script src="./js/mainScripts.js"></script>
   </body>
 </html>
